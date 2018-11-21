@@ -10,7 +10,6 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # Disable the crash reporter
 defaults write com.apple.CrashReporter DialogType -string "none"
 
-
 ## Track pad & Keyboard
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
@@ -24,6 +23,11 @@ defaults write NSGlobalDomain InitialKeyRepeat -int
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
+## General tuning
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
 ## Finder
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
@@ -31,6 +35,9 @@ defaults write com.apple.finder QuitMenuItem -bool true
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -67,3 +74,4 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool false
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+

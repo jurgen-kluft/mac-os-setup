@@ -9,6 +9,9 @@ defaults write com.apple.Dock autohide-delay -float 0
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0
+
 # Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 38
 
@@ -17,6 +20,9 @@ defaults write com.apple.dock launchanim -bool false
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
+
+# Make Dock more transparent
+defaults write com.apple.dock hide-mirror -bool true
 
 # Removed genie animation
 defaults write com.apple.dock mineffect suck;
@@ -32,6 +38,9 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
 defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
+
+# Get rid of the unused dashboard
+defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Remove All Apps From The Dock In OS X
 defaults write com.apple.dock persistent-apps -array

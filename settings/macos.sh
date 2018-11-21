@@ -33,38 +33,6 @@ osascript -e 'tell application "System Preferences" to quit'
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME
 
 ###############################################################################
-# General tuning                                                              #
-###############################################################################
-
-# Show the ~/Library folder
-chflags nohidden ~/Library
-
-# Store screenshots directly on desktop
-defaults write com.apple.screencapture location ~/Desktop
-# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string "png"
-
-# Get rid of the unused dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
-defaults write com.apple.dock dashboard-in-overlay -bool true
-
-###############################################################################
-# Finder                                                                      #
-###############################################################################
-
-# Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
-# Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
-###############################################################################
-# Terminal                                                                    #
-###############################################################################
-
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
-
-###############################################################################
 # Time Machine                                                                #
 ###############################################################################
 
@@ -80,5 +48,4 @@ defaults write com.apple.terminal StringEncodings -array 4
 ###############################################################################
 
 killall Finder
-killall Dock
 # killall SystemUIServer

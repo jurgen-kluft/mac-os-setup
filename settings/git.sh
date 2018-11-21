@@ -12,8 +12,8 @@ fi
 
 echo "Setting Git configs ..."
 
-user_name=`git config --global user.name`;
-user_email=`git config --global user.email`;
+user_name=$(git config --global user.name);
+user_email=$(git config --global user.email);
 
 if [[ "$user_name" != "" ]]; then
     echo "Username already set, aborting"

@@ -13,14 +13,6 @@ print_help() {
     echo -e "  --remove\tTo remove currently installed version"
 }
 
-if [ -n "`$SHELL -c 'echo $ZSH_VERSION'`" ]; then
-    # assume Zsh
-    shell_profile="zshrc"
-elif [ -n "`$SHELL -c 'echo $BASH_VERSION'`" ]; then
-    # assume Bash
-    shell_profile="bashrc"
-fi
-
 if [ "$1" == "--32" ]; then
     DFILE="go$VERSION.linux-386.tar.gz"
 elif [ "$1" == "--64" ]; then
@@ -61,7 +53,7 @@ fi
 echo "Extracting $DFILE ..."
 tar -C "$HOME" -xzf /tmp/go.tar.gz
 mv "$HOME/go" "$HOME/.go"
-mkdir -p $HOME/go/{src,pkg,bin}
+mkdir -p "$HOME/go/{src,pkg,bin}"
 echo -e "\nGo $VERSION was installed.\nMake sure to relogin into your shell or run:"
 echo -e "\n\tsource $HOME/mac-os-dotfiles/.golang_paths.\n\nto update your environment variables."
 echo "Tip: Opening a new terminal window usually just works. :)"

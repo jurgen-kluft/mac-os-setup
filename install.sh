@@ -4,6 +4,15 @@
 # Inspirations came from all over the fantastic .dotfiles repos at GitHub!
 #
 
+## Custom color codes & utility functions
+source helper/utility.sh
+
+## Terminal & Dock setup
+source osx/screen.sh
+source osx/dock.sh
+source osx/system.sh
+source osx/terminal.sh
+
 # Ask the user a Yes/No question
 function ask_question() {
     read -p "${1} (y/N) " choice

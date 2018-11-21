@@ -36,7 +36,7 @@ brew "wget"
 ######################################################################
 
 # ==== VPN ====
-cask "expressvpn"
+# cask "expressvpn"
 
 #cask "cleanmymac"
 cask "hyperdock"
@@ -60,7 +60,7 @@ brew "zsh-autosuggestions"
 # (Text-)Editors                                                     #
 ######################################################################
 
-cask "visual-studio-code"
+#cask "visual-studio-code"
 cask "gitbook"
 
 # maybe not for your everyday work

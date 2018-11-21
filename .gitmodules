@@ -1,3 +1,4 @@
-[submodule "dotfiles"]
-	path = dotfiles
+[submodule "mac-os-dotfiles"]
+	path = mac-os-dotfiles
 	url = https://github.com/jurgen-kluft/mac-os-dotfiles
+	branch = master

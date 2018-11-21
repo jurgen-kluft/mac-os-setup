@@ -10,4 +10,4 @@ if [ ! -d ~/bin/ ]; then
 fi
 
 echo "Copying bin/ ..."
-cp -r ~/dotfiles/bin/ ~/bin/
+cp -r ~/mac-os-setup/bin/ ~/bin/

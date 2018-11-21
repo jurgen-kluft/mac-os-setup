@@ -8,10 +8,11 @@ cask_args appdir: "/Applications"
 brew "git"
 brew "git-extras"
 #brew "git-flow"
+brew "cat"
 brew "curl"
 #brew "tree"
 #brew "openssl"
-#brew "wget"
+brew "wget"
 #brew "mariadb"
 #cask "db-browser-for-sqlite"
 #cask "sequel-pro"
@@ -29,19 +30,13 @@ brew "curl"
 # brew "docker"
 # brew "docker-machine"
 
-# ==== VPN ====
-cask "expressvpn"
-
-######################################################################
-# Everything C++ related                                             #
-######################################################################
-
-cask "visual-studio-code"
-
 
 ######################################################################
 # Licensed software                                                  #
 ######################################################################
+
+# ==== VPN ====
+cask "expressvpn"
 
 #cask "cleanmymac"
 cask "hyperdock"
@@ -65,6 +60,7 @@ brew "zsh-autosuggestions"
 # (Text-)Editors                                                     #
 ######################################################################
 
+cask "visual-studio-code"
 cask "gitbook"
 
 # maybe not for your everyday work
@@ -78,7 +74,8 @@ cask "gitbook"
 # Everyday tools / Cloud / Communication                             #
 ######################################################################
 
-cask "commander-one"
+cask "alfred"
+cask "path-finder"
 
 # google is enough spyware for one computer ;-)
 # cask "dropbox"

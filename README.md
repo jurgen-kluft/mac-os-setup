@@ -1,9 +1,6 @@
 # MacOS developer setup - dotfiles and software
 
-This is a not only a simple .dotfiles repo from a PHP developer
-but also a bunch of scripts to create a full featured working environment for myself. 
-
-I had the idea to combine my [dotfiles repo](https://github.com/kevinpapst/dotfiles) with the installer functionality after writing my guide [Developer setup for Mac OS X 10.11 El Capitan](https://gist.github.com/kevinpapst/24e251a5bf3a01174a231e8eeb13d6cd)
+This is a not only a simple .dotfiles repo from a developer but also a bunch of scripts to create a full featured working environment for myself. 
 
 Be careful: it was never meant to run with any other OS, so don't try it!
 
@@ -16,11 +13,11 @@ Its fun for me to play around with this setup and improve my tooling and workflo
 
 Main files and folder:
 
-- `atom/` - my atom settings, will be linked to ~./atom  
 - `bin/` - helper scripts and binaries  
-- `dotfiles/` - every file in here will be copied to your HOME (~) directory  
+- `helpers/` - helper scripts during install
 - `installer/` - some basic software installer, that can't be fetched by Homebrew
 - `iterm2/` - my iTerm2 configuration, files will be linked via MacOS configuration (manual restart iTerm2 afterwards) 
+- `mac-os-dotfiles/` - every file in here will be copied to your HOME (~) directory  
 - `settings/` - installer scripts for settings
 - `Brewfile` - all the brew repos that will be watched and the software to be installed  
 
@@ -30,9 +27,9 @@ Make sure that you checked the following points before you run the installer:
 
 - Remove any file from `installer/` that you don't need
 - Carefully read and adjust `Brewfile` to only install the software you need   
-- Make sure that the `.macos` settings are thoroughly reviewed    
+- Make sure that `settings/.macos` settings are thoroughly reviewed    
 - Adjust your Git credentials and GitHub settings in `settings/git.sh` 
-- add the file `~/dotfiles/.local` or `~/.bash_local` for all your sensitive local settings 
+- add the file `~/mac-os-dotfiles/.local` or `~/.bash_local` for all your sensitive local settings 
 
 ## Installation
 
@@ -40,16 +37,16 @@ You will be prompted during each installation step for your permission.
 But a word of warning nevertheless: create a backup of your dotfiles and/or your environment first!
 
 ```bash
-git clone https://github.com/kevinpapst/mac-os-setup.git ~/dotfiles
+git clone https://github.com/jurgen-kluft/mac-os-setup.git ~/mac-os-dotfiles
 ```
 
-If you don't want to install to `~/dotfiles/` you MUST search for that string and replace it in some files!
+If you don't want to install to `~/mac-os-dotfiles/` you MUST search for that string and replace it in some files!
 
 
 Installation (as well as updating later on) is as simple as calling `install.sh`:
 
 ```bash
-cd ~/dotfiles/
+cd ~/mac-os-dotfiles/
 ./install.sh
 ```
 

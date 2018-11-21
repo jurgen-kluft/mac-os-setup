@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# Atom editor - copy settings
+# iTerm2 - copy settings
 #
 
 echo "Importing iTerm2 settings ..."

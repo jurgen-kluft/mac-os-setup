@@ -21,12 +21,14 @@ function ask_question() {
 DOTFILES_DIR="$(cd "$(dirname "$0")"; pwd -P)"
 
 # Pull latest files from GitHub
-echo "Fetching latest version from GitHub ..."
+if ask_question 'Do you want to get latest?'; then
+    echo "Fetching latest version from GitHub ..."
 
-cd $DOTFILES_DIR
-git pull origin master
-git submodule update --init --recursive
-git submodule foreach git pull origin master
+    cd "$DOTFILES_DIR"
+    git pull origin master
+    git submodule update --init --recursive
+    git submodule foreach git pull origin master
+fi
 
 # -------------------------------------------------------------------------------------------
 
@@ -35,7 +37,7 @@ if ask_question 'Do you want to install un-brewed software?'; then
     echo "Installing un-brewed software ..."
     for i in ./installer/*; do
         echo "Executing $i ..."
-        sh $i
+        sh "$i"
     done
 fi
 
@@ -54,7 +56,7 @@ if ask_question 'Do you want to install application and MacOS settings?'; then
     echo "Installing application settings ..."
     for s in ./settings/*; do
         echo "Apply settings from $s ..."
-        sh $s
+        sh "$s"
     done
 fi
 

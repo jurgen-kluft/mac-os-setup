@@ -33,7 +33,4 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
 defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
-# Remove All Apps From The Dock In OS X
-defaults write com.apple.dock persistent-apps -array
-
 killall Dock

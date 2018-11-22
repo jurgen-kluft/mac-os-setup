@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-VERSION="1.11.12"
+VERSION="1.11.2"
 
 print_help() {
     echo "Usage: bash goinstall.sh OPTIONS"

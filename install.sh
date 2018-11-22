@@ -5,7 +5,7 @@
 #
 
 ## Custom color codes & utility functions
-source helper/utility.sh
+source helpers/utility.sh
 
 # Ask the user a Yes/No question
 function ask_question() {

@@ -34,12 +34,13 @@ else
     exit 1
 fi
 
-echo "Installing Go $VERSION from $DFILE"
 
 if [ -d "$HOME/.go" ] || [ -d "$HOME/go" ]; then
-    echo "The 'go' or '.go' directories already exist. Exiting."
+    echo "Go is already installed, 'go' or '.go' directories exist."
     exit 1
 fi
+
+echo "Installing Go $VERSION from $DFILE"
 
 echo "Downloading $DFILE ..."
 
@@ -53,6 +54,7 @@ fi
 echo "Extracting $DFILE ..."
 tar -C "$HOME" -xzf /tmp/go.tar.gz
 mv "$HOME/go" "$HOME/.go"
+mkdir -p "$HOME/dev.go/{src,pkg,bin}"
 mkdir -p "$HOME/go/{src,pkg,bin}"
 echo -e "\nGo $VERSION was installed.\nMake sure to relogin into your shell or run:"
 echo -e "\n\tsource $HOME/mac-os-dotfiles/.golang_paths.\n\nto update your environment variables."

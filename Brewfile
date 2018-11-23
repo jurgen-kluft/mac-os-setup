@@ -54,13 +54,10 @@ brew "zsh-autosuggestions"
 
 tap "caskroom/fonts"
 cask "font-menlo-for-powerline"
-brew "zsh-autosuggestions"
 
 ######################################################################
 # (Text-)Editors                                                     #
 ######################################################################
-
-#cask "visual-studio-code"
 
 # maybe not for your everyday work
 # cask "poedit"

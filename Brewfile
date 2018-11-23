@@ -38,7 +38,7 @@ brew "wget"
 # ==== VPN ====
 # cask "expressvpn"
 
-#cask "cleanmymac"
+# cask "cleanmymac"
 cask "hyperdock"
 
 # subversion is oldschool, try to avoid it by any means
@@ -61,11 +61,10 @@ brew "zsh-autosuggestions"
 ######################################################################
 
 #cask "visual-studio-code"
-cask "gitbook"
 
 # maybe not for your everyday work
 # cask "poedit"
-# cask "macdown"
+cask "macdown"
 
 # textwrangler is no longer available and became part of bbedit
 # cask "bbedit"
@@ -80,11 +79,11 @@ cask "path-finder"
 # google is enough spyware for one computer ;-)
 # cask "dropbox"
 
-cask "skype"
-#cask "slack"
+# cask "skype"
+# cask "slack"
 cask "vlc"
 cask "libreoffice"
-cask "handbrake"
+# cask "handbrake"
 cask "cheatsheet"
 
 # cask "keepassx"               # I prefer MacPass due to its much nicer UI
@@ -101,7 +100,7 @@ cask "macpass"
 # cask "the-unarchiver"		    # don't know which one ...
 # cask "keka"			        # ... is the better un-archiver, so try any of them
 
-#cask "aerial"                   "# screensaver showing the AppleTV aerial videos
+# cask "aerial"                 # screensaver showing the AppleTV aerial videos
 
 ######################################################################
 # Drivers                                                            #
@@ -125,7 +124,7 @@ cask "google-chrome"
 # Image editing and manipulation                                     #
 ######################################################################
 
-cask "macsvg"
+# cask "macsvg"
 # cask "gimp"                   # almost too much for the simple tasks
 # cask "seashore"               # simple image editing for everyone
 # cask "imageoptim"             # shrinking all kinds of images
@@ -143,7 +142,7 @@ cask "qlmarkdown"
 cask "quicklook-json"
 #cask "qlprettypatch"
 cask "quicklook-csv"
-#cask "betterzipql"
+cask "betterzipql"
 #cask "qlimagesize"
 #cask "webpquicklook"
 #cask "suspicious-package"       # http://www.mothersruin.com/software/SuspiciousPackage/

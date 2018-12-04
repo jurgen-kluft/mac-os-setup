@@ -6,6 +6,7 @@ cask_args appdir: "/Applications"
 ######################################################################
 
 brew "git"
+brew "tig"
 brew "git-extras"
 #brew "git-flow"
 brew "bat"

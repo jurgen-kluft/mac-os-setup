@@ -8,20 +8,10 @@ cask_args appdir: "/Applications"
 brew "git"
 brew "tig"
 brew "git-extras"
-#brew "git-flow"
 brew "bat"
 brew "curl"
-#brew "tree"
 brew "jump"
-#brew "openssl"
 brew "wget"
-#brew "mariadb"
-#cask "db-browser-for-sqlite"
-#cask "sequel-pro"
-#cask "virtualbox"
-#cask "vagrant"
-#cask "transmit"
-#cask "postman"
 
 # ==== Some version control tools you might like ====
 # cask "github-desktop"
@@ -32,7 +22,6 @@ brew "wget"
 # brew "docker"
 # brew "docker-machine"
 
-
 ######################################################################
 # Licensed software                                                  #
 ######################################################################
@@ -42,9 +31,6 @@ brew "wget"
 
 # cask "cleanmymac"
 cask "hyperdock"
-
-# subversion is oldschool, try to avoid it by any means
-# cask "versions"
 
 ######################################################################
 # Shell: iTerm2, zsh, oh-my-zsh plugins and themes                   #
@@ -64,9 +50,10 @@ cask "font-menlo-for-powerline"
 # maybe not for your everyday work
 # cask "poedit"
 cask "macdown"
+cask "vscodium"
 
 # textwrangler is no longer available and became part of bbedit
-# cask "bbedit"
+cask "bbedit"
 
 ######################################################################
 # Everyday tools / Cloud / Communication                             #
@@ -80,6 +67,7 @@ cask "path-finder"
 
 # cask "skype"
 # cask "slack"
+cask "zoom"
 cask "vlc"
 cask "libreoffice"
 # cask "handbrake"

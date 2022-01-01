@@ -18,16 +18,14 @@ function ask_question() {
 }
 
 # Get the dotfiles directory's absolute path
-DOTFILES_DIR="$(cd "$(dirname "$0")"; pwd -P)"
+MACOS_SETUP_DIR="$(cd "$(dirname "$0")"; pwd -P)"
 
 # Pull latest files from GitHub
 if ask_question 'Do you want to get latest?'; then
     echo "Fetching latest version from GitHub ..."
 
-    cd "$DOTFILES_DIR"
+    cd "$MACOS_SETUP_DIR"
     git pull origin master
-    git submodule update --init --recursive
-    git submodule foreach git pull origin master
 fi
 
 # -------------------------------------------------------------------------------------------
@@ -63,9 +61,21 @@ fi
 # -------------------------------------------------------------------------------------------
 
 # last action: activate dotfiles from repo, which depend of previously installed software (especially oh-my-zsh)
-if ask_question 'Do you want to install new .dotfiles?'; then
-    echo "Installing new .dotfiles ..."
-    rsync -av --no-perms --exclude="README.md" --exclude=".git" ./mac-os-dotfiles/ ~
+if ask_question 'Do you want to install .dotfiles?'; then
+    echo "Installing .dotfiles with chezmoi ..."
+    if [ $(which chezmoi) ]; then
+        if [ -d "~/.local/share/chezmoi" ]; then
+            echo "chezmoi .dotfiles already installed ..."
+        else
+            mkdir "~/.local"
+            mkdir "~/.local/share"
+            cd "~/.local/share/chezmoi"
+            git clone https://github.com/jurgen-kluft/macos-dotfiles .
+            chezmoi apply
+        fi
+    else
+        echo "chezmoi dotfile manager is not installed (brew install chezmoi)"
+    fi
 fi
 
 # -------------------------------------------------------------------------------------------
@@ -77,6 +87,6 @@ if ask_question 'Do you want to reboot your computer now?'; then
     exit 0
 fi
 
-unset DOTFILES_DIR
+unset MACOS_SETUP_DIR
 unset -f ask_question
 exit 1

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-VERSION="1.11.2"
+VERSION="1.16.12"
 
 print_help() {
     echo "Usage: bash goinstall.sh OPTIONS"
@@ -44,7 +44,7 @@ echo "Installing Go $VERSION from $DFILE"
 
 echo "Downloading $DFILE ..."
 
-wget https://dl.google.com/go/$DFILE -O /tmp/go.tar.gz
+wget https://golang.google.cn/dl/$DFILE -O /tmp/go.tar.gz
 
 if [ $? -ne 0 ]; then
     echo "Download failed! Exiting."
@@ -61,4 +61,8 @@ echo -e "\n\tsource $HOME/mac-os-dotfiles/.golang_paths.\n\nto update your envir
 echo "Tip: Opening a new terminal window usually just works. :)"
 echo "Removing $DFILE ..."
 rm -f /tmp/go.tar.gz
+
+go env -w GOSUMDB=sum.golang.google.cn
+go env -w GOPROXY=https://goproxy.cn
+
 echo "Done ..."

@@ -9,28 +9,29 @@ cask_args appdir: "/Applications"
 brew "topgrade"
 brew "git"
 brew "git-extras"
+brew "diff-so-fancy"
 brew "gitui"
 brew "tig"
 
-# ==== Programming languages ====
+# ==== Programming languages and utilities ====
 cask "dotnet-sdk"
 brew "llvm"
 brew "gcc"
 
-brew "bat"
+brew "cat"
 brew "curl"
 brew "jump"
 brew "wget"
-
-brew "--HEAD neovim" # Latest
-
-brew "chezmoi" # yet another dotfiles manager
+brew "exa"
 brew "rg" # ripgrep
 brew "yq" # yq is a portable command-line YAML processor
 brew "fzf" # fuzzy file finder
 brew "zoxide" # jump for cd
 
+brew "qalculate-gtk"
+brew "chezmoi" # yet another dotfiles manager
 brew "starship" # prompt for zsh
+brew "--HEAD neovim" # Latest
 
 ######################################################################
 # Licensed software                                                  #
@@ -66,14 +67,12 @@ cask "visual-studio-code"
 ######################################################################
 
 cask "alfred"
-cask "path-finder"
-
 cask "vlc"
 cask "cheatsheet"
 
 cask "macpass"
-
 cask "calibre"
+
 
 ######################################################################
 # Drivers                                                            #

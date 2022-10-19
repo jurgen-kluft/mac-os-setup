@@ -14,7 +14,6 @@ brew "gitui"
 brew "tig"
 
 # ==== Programming languages and utilities ====
-cask "dotnet-sdk"
 brew "llvm"
 brew "gcc"
 
@@ -31,7 +30,7 @@ brew "zoxide" # jump for cd
 brew "qalculate-gtk"
 brew "chezmoi" # yet another dotfiles manager
 brew "starship" # prompt for zsh
-brew "--HEAD neovim" # Latest
+brew "neovim" # Latest
 
 ######################################################################
 # Licensed software                                                  #
@@ -40,13 +39,11 @@ brew "--HEAD neovim" # Latest
 # ==== VPN ====
 # cask "expressvpn"
 
-
 ######################################################################
 # Shell: iTerm2, zsh, oh-my-zsh plugins and themes                   #
 ######################################################################
 
 cask "iterm2"
-brew "kitty" # terminal emulator
 brew "zsh"
 brew "zsh-autosuggestions"
 
@@ -60,7 +57,7 @@ cask "font-fira-code"
 # (Text-)Editors                                                     #
 ######################################################################
 
-cask "visual-studio-code"
+# cask "visual-studio-code"
 
 ######################################################################
 # Everyday tools / Cloud / Communication                             #
@@ -68,11 +65,8 @@ cask "visual-studio-code"
 
 cask "alfred"
 cask "vlc"
-cask "cheatsheet"
 
-cask "macpass"
 cask "calibre"
-
 
 ######################################################################
 # Drivers                                                            #
@@ -85,7 +79,6 @@ cask "calibre"
 # Browser                                                            #
 ######################################################################
 
-cask "firefox"
 cask "google-chrome"
 
 

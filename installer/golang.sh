@@ -53,14 +53,19 @@ fi
 
 echo "Extracting $DFILE ..."
 tar -C "$HOME" -xzf /tmp/go.tar.gz
-mv "$HOME/go" "$HOME/.go"
-mkdir -p "$HOME/dev.go/{src,pkg,bin}"
-mkdir -p "$HOME/go/{src,pkg,bin}"
+mkdir -p "$HOME/dev.go/src"
+mkdir -p "$HOME/dev.go/bin"
+mkdir -p "$HOME/dev.go/pkg"
+mkdir -p "$HOME/go/src"
+mkdir -p "$HOME/go/pkg"
+mkdir -p "$HOME/go/bin"
 echo -e "\nGo $VERSION was installed.\nMake sure to relogin into your shell or run:"
 echo -e "\n\tsource $HOME/mac-os-dotfiles/.golang_paths.\n\nto update your environment variables."
 echo "Tip: Opening a new terminal window usually just works. :)"
 echo "Removing $DFILE ..."
 rm -f /tmp/go.tar.gz
+
+mv "$HOME/go" "$HOME/sdk/go$VERSION"
 
 go env -w GOSUMDB=sum.golang.google.cn
 go env -w GOPROXY=https://goproxy.cn

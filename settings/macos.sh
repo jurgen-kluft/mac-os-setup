@@ -22,15 +22,15 @@ osascript -e 'tell application "System Preferences" to quit'
 #while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name
-#COMPUTERNAME="obnosis1"
-#HOSTNAME='imac'
-#LOCALHOSTNAME='imac'
+OMPUTERNAME="obnosis5"
+HOSTNAME='obnosis5'
+LOCALHOSTNAME='obnosis5'
 
 # Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName $COMPUTERNAME
-#sudo scutil --set HostName $HOSTNAME
-#sudo scutil --set LocalHostName $LOCALHOSTNAME
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME
+sudo scutil --set ComputerName $COMPUTERNAME
+sudo scutil --set HostName $HOSTNAME
+sudo scutil --set LocalHostName $LOCALHOSTNAME
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME
 
 ###############################################################################
 # Time Machine                                                                #

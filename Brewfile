@@ -57,7 +57,7 @@ cask "font-fira-code"
 # (Text-)Editors                                                     #
 ######################################################################
 
-cask "visual-studio-code"
+# cask "visual-studio-code"
 
 ######################################################################
 # Everyday tools / Cloud / Communication                             #

@@ -6,7 +6,7 @@ cask_args appdir: "/Applications"
 ######################################################################
 
 # ==== Some version control tools you might like ====
-brew "topgrade"
+brew "topgrade-rs"
 brew "git"
 brew "git-extras"
 brew "diff-so-fancy"
@@ -17,15 +17,20 @@ brew "tig"
 brew "llvm"
 brew "gcc"
 
-brew "cat"
 brew "curl"
 brew "jump"
 brew "wget"
-brew "exa"
-brew "rg" # ripgrep
 brew "yq" # yq is a portable command-line YAML processor
 brew "fzf" # fuzzy file finder
+
+brew "bat" # cat done better
+brew "exa" # ls done better
+brew "rg" # ripgrep
+brew "rip" # rm (Rm ImProved)
 brew "zoxide" # jump for cd
+brew "eva" # expression evaluator (Rust)
+brew "felix" # tiny file-commander in terminal (Rust)
+brew "miniserve" # miniserve is a cross-platform CLI tool that allows you to serve file(s) via HTTP
 
 brew "qalculate-gtk"
 brew "chezmoi" # yet another dotfiles manager

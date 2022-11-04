@@ -29,8 +29,6 @@ unset user_name
 unset user_email
 
 # Set git config values
-git config --global user.name "Jurgen Kluft"
-git config --global user.email "jurgen.kluft@gmail.com"
 git config --global github.user jurgen-kluft
 git config --global github.token your_token_here
 git config --global color.ui true

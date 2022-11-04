@@ -67,6 +67,11 @@ rm -f /tmp/go.tar.gz
 
 mv "$HOME/go" "$HOME/sdk/go$VERSION"
 
+if [ -d "$HOME/sdk/go" ]; then
+    rm $HOME/sdk/go
+fi
+ln -s $HOME/sdk/go$VERSION $HOME/sdk/go
+
 go env -w GOSUMDB=sum.golang.google.cn
 go env -w GOPROXY=https://goproxy.cn
 

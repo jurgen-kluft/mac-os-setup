@@ -4,6 +4,8 @@ cask_args appdir: "/Applications"
 ######################################################################
 # The development, console and server stuff                          #
 ######################################################################
+brew "bash" # latest bash 4.1+
+brew "bash-completion@2" # bash completion v2
 
 # ==== Some version control tools you might like ====
 brew "topgrade-rs"
@@ -13,6 +15,8 @@ brew "git-extras"
 brew "diff-so-fancy"
 brew "gitui"
 brew "lazygit"
+brew "git-delta" # delta, diff tool
+brew "git bash-completion"
 
 # ==== Programming languages and utilities ====
 brew "llvm"

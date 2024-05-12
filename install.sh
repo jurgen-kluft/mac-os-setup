@@ -67,11 +67,15 @@ if ask_question 'Do you want to install .dotfiles?'; then
         if [ -d "~/.local/share/chezmoi" ]; then
             echo "chezmoi .dotfiles already installed ..."
         else
-            mkdir "~/.local"
-            mkdir "~/.local/share"
-            cd "~/.local/share/chezmoi"
+            cd ~
+            mkdir ".local"
+            cd ".local"
+            mkdir "share"
+            cd share
+            mkdir "chezmoi"
             git clone https://github.com/jurgen-kluft/macos-dotfiles .
             chezmoi apply
+            cd ~
         fi
     else
         echo "chezmoi dotfile manager is not installed (brew install chezmoi)"

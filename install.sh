@@ -68,11 +68,7 @@ if ask_question 'Do you want to install .dotfiles?'; then
             echo "chezmoi .dotfiles already installed ..."
         else
             cd ~
-            mkdir ".local"
-            cd ".local"
-            mkdir "share"
-            cd share
-            mkdir "chezmoi"
+            mkdir -p ".local/share/chezmoi"
             git clone https://github.com/jurgen-kluft/macos-dotfiles .
             chezmoi apply
             cd ~

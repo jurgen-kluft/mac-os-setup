@@ -53,12 +53,6 @@ cask "iterm2"
 brew "zsh"
 brew "zsh-autosuggestions"
 
-tap "caskroom/fonts"
-cask "font-menlo-for-powerline"
-tap "homebrew/cask-fonts"
-cask "font-hack-nerd-font"
-cask "font-fira-code"
-
 ######################################################################
 # (Text-)Editors                                                     #
 ######################################################################

@@ -27,17 +27,16 @@ brew "wget"
 brew "jump"
 brew "yq" # yq is a portable command-line YAML processor
 brew "fzf" # fuzzy file finder
+brew "felix" # tiny file-commander in terminal (Rust)
 
 brew "bat" # cat done better
 brew "lsd" # ls done better
 brew "rg" # ripgrep
-brew "rip" # rm (Rm ImProved)
+brew "rm-improved" # rm (Rm ImProved)
 brew "zoxide" # jump for cd
 brew "eva" # expression evaluator (Rust)
-# brew "felix" # tiny file-commander in terminal (Rust)
 brew "miniserve" # miniserve is a cross-platform CLI tool that allows you to serve file(s) via HTTP
 
-brew "qalculate-gtk"
 brew "chezmoi" # yet another dotfiles manager
 brew "starship" # prompt for zsh
 brew "neovim" # Latest
@@ -45,9 +44,6 @@ brew "neovim" # Latest
 ######################################################################
 # Licensed software                                                  #
 ######################################################################
-
-# ==== VPN ====
-# cask "expressvpn"
 
 ######################################################################
 # Shell: iTerm2, zsh, oh-my-zsh plugins and themes                   #
@@ -67,23 +63,20 @@ cask "font-fira-code"
 # (Text-)Editors                                                     #
 ######################################################################
 
-# cask "visual-studio-code"
+brew "helix" # an editor written in Rust
+brew "micro" # an editor written in Rust
 
 ######################################################################
 # Everyday tools / Cloud / Communication                             #
 ######################################################################
 
-cask "alfred"
 cask "vlc"
-
 cask "calibre"
 
 ######################################################################
 # Drivers                                                            #
 ######################################################################
 
-#tap "caskroom/drivers"
-#cask "canon-pixma-scanner-driver-ica"     # for my Canon MG5350 printer
 
 ######################################################################
 # Browser                                                            #

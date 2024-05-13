@@ -8,7 +8,7 @@ brew "bash" # latest bash 4.1+
 brew "bash-completion@2" # bash completion v2
 
 # ==== Some version control tools you might like ====
-brew "topgrade-rs"
+brew "topgrade"
 
 brew "git"
 brew "git-extras"

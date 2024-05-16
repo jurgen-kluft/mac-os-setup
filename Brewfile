@@ -27,7 +27,6 @@ brew "wget"
 brew "jump"
 brew "yq" # yq is a portable command-line YAML processor
 brew "fzf" # fuzzy file finder
-brew "felix" # tiny file-commander in terminal (Rust)
 
 brew "bat" # cat done better
 brew "lsd" # ls done better

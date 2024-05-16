@@ -37,7 +37,6 @@ brew "zoxide" # jump for cd
 brew "eva" # expression evaluator (Rust)
 brew "miniserve" # miniserve is a cross-platform CLI tool that allows you to serve file(s) via HTTP
 
-brew "chezmoi" # yet another dotfiles manager
 brew "starship" # prompt for zsh
 brew "neovim" # Latest
 

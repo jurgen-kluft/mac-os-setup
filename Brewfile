@@ -11,11 +11,7 @@ brew "bash-completion@2" # bash completion v2
 brew "topgrade"
 
 brew "git"
-brew "git-extras"
-brew "diff-so-fancy"
-brew "gitui"
 brew "lazygit"
-brew "git-delta" # delta, diff tool
 brew "git bash-completion"
 
 # ==== Programming languages and utilities ====
@@ -24,8 +20,6 @@ brew "gcc"
 
 brew "curl"
 brew "wget"
-brew "jump"
-brew "yq" # yq is a portable command-line YAML processor
 brew "fzf" # fuzzy file finder
 
 brew "bat" # cat done better
@@ -63,7 +57,6 @@ brew "micro" # an editor written in Rust
 ######################################################################
 
 cask "vlc"
-cask "calibre"
 
 ######################################################################
 # Drivers                                                            #
